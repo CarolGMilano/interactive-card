@@ -157,10 +157,21 @@
         }
 
         div {
-            .date {
+            div {
                 div {
-                    .input__text {
-                        width: 90px;
+                    div {
+                        .input__text {
+                            width: 90px;
+                            height: 49px;
+
+                            &::placeholder {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .msg__error {
+                        font-size: 15px;
                     }
                 }
             } 

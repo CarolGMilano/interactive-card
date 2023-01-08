@@ -270,8 +270,21 @@ body main {
   .form label .input__text::placeholder {
     font-size: 18px;
   }
-  .form div .date div .input__text {
+  .form div div div div .input__text {
     width: 90px;
+    height: 49px;
+  }
+  .form div div div div .input__text::-moz-placeholder {
+    font-size: 18px;
+  }
+  .form div div div div .input__text:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .form div div div div .input__text::placeholder {
+    font-size: 18px;
+  }
+  .form div div div .msg__error {
+    font-size: 15px;
   }
   .form .btn__submit {
     padding: 1rem;
