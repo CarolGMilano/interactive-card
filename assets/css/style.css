@@ -32,8 +32,8 @@ body main {
 }
 .cards {
   position: relative;
-  width: 393px;
-  height: 339px;
+  min-width: 393px;
+  min-height: 339px;
 }
 .cards .cards__back {
   position: absolute;
