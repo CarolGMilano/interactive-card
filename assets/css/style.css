@@ -186,9 +186,51 @@ body main {
   display: flex;
   flex-direction: row;
 }
-.form div .date div .input__text {
+.form div div {
+  display: flex;
+  flex-direction: column;
+}
+.form div div label {
+  margin: 0;
+}
+.form div div div div {
+  display: flex;
+  flex-direction: row;
+}
+.form div div div div .input__text {
+  border: 1px solid hsl(270deg, 3%, 87%);
+  border-radius: 6px;
+  padding: 0.6rem;
   margin-right: 0.5rem;
   width: 60px;
+  margin-top: 0.5rem;
+  outline: none;
+}
+.form div div div div .input__text::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+  font-family: "Space Grotesk", sans-serif;
+}
+.form div div div div .input__text:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+  font-family: "Space Grotesk", sans-serif;
+}
+.form div div div div .input__text::placeholder {
+  color: hsl(270deg, 3%, 87%);
+  font-family: "Space Grotesk", sans-serif;
+}
+.form div div div div .input__text:focus {
+  border-image-source: linear-gradient(hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
+  border-width: 1px;
+  border-image-slice: 1;
+}
+.form div div div .msg__error {
+  display: inline-block;
+  color: hsl(0deg, 100%, 66%);
+  text-transform: none;
+  padding-top: 0.3rem;
+  letter-spacing: 0.1rem;
+  font-size: 10px;
+  font-weight: 500;
 }
 .form div .cvc {
   margin-left: 0.5rem;

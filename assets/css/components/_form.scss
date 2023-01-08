@@ -56,15 +56,62 @@
         display: flex;
         flex-direction: row;
 
-        .date {
-            div {
-                .input__text {
-                    margin-right: .5rem;
+        div {
+            display: flex;
+            flex-direction: column;
 
-                    width: 60px;
+            label {
+                margin: 0;
+            }
+
+            div {
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+
+                    .input__text {
+                        border: 1px solid $light-grayish-violet;
+                        border-radius: 6px;
+                        padding: .6rem;
+
+                        margin-right: .5rem;
+    
+                        width: 60px;
+
+                        margin-top: .5rem;
+
+                        outline: none;
+
+                        &::placeholder {
+                            color: $light-grayish-violet;
+                            font-family: $font;
+                        }
+                
+                        &:focus {
+                            border-image-source: linear-gradient($border);
+                            border-width: 1px;
+                            border-image-slice: 1;
+                        }
+                    }
+                }
+
+                .msg__error {
+                    display: inline-block;
+        
+                    color: $red;
+        
+                    text-transform: none;
+        
+                    padding-top: .3rem;
+
+                    letter-spacing: .1rem;
+                    font-size: 10px;
+                    font-weight: 500;
                 }
             }
-        } 
+        }
+        
         
         .cvc {
             margin-left: .5rem;

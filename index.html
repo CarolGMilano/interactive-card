@@ -49,14 +49,17 @@
                 </label>
 
                 <div>
-                    <label class="date">Exp. date (mm/yy)
+                    <div>
+                        <label class="date" for="month">Exp. date (mm/yy)</label>
                         <div>
-                            <input type="text" class="input__text" name="month" placeholder="MM" maxlength="2" minlength="2" data-input required pattern="(0[1-9]|1[012])">
-                            <input type="text" class="input__text" name="year" placeholder="YY" maxlength="2" minlength="2" data-input required pattern="(2[3-9]|3[0-9])">
-                        </div>
+                            <div>
+                                <input type="text" class="input__text" name="month" placeholder="MM" maxlength="2" minlength="2" data-input required pattern="(0[1-9]|1[012])" id="month">
+                                <input type="text" class="input__text" name="year" placeholder="YY" maxlength="2" minlength="2" data-input required pattern="(2[3-9]|3[0-9])">
+                            </div>
 
-                        <span class="msg__error" data-erro></span>
-                    </label>
+                            <span class="msg__error" data-erro></span>
+                        </div>  
+                    </div>
 
                     <label class="cvc">Cvc
                         <input type="text" class="input__text" name="cvc" placeholder="e.g 123" maxlength="3" minlength="3" data-input required pattern="[0-9]{3}">
